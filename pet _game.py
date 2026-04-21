@@ -364,4 +364,4 @@ def pet_game():
 
 
 if __name__ == "__main__":
-    start_server(pet_game, port=8084, debug=True)
+    start_server(pet_game,  debug=True)
