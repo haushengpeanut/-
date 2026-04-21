@@ -364,4 +364,7 @@ def pet_game():
 
 
 if __name__ == "__main__":
-    start_server(pet_game,  debug=True)
+    pet_game()
+else:
+    from pywebio.platform.wsgi import make_app
+    app = make_app(pet_game)
